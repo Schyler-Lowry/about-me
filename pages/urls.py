@@ -1,3 +1,7 @@
+# Schyler Lowry
+# CIS-218
+# 5/25/2023
+
 from django.urls import path
 
 from .views import HomePageView, ProjectsPageView, ContactPageView

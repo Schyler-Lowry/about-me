@@ -1,3 +1,7 @@
+# Schyler Lowry
+# CIS-218
+# 5/25/2023
+
 """
 Django settings for django_project project.
 
