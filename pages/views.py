@@ -13,10 +13,12 @@ import requests
 class HomePageView(TemplateView):
     template_name = "home.html"
 
+    
+
     def get_context_data(self, **kwargs):
         context = super(HomePageView, self).get_context_data(**kwargs)
-        if "code" in self.kwargs:
-            context["code"] = self.kwargs["code"]
+        #authtoken = self.request.GET.get("code")
+        context["code"] = self.request.GET.get("code")
         return context
 
 class ProjectsPageView(TemplateView):

@@ -8,9 +8,61 @@
 <p class="lead">Greetings. I'm Schyler - pronounced: SHY-ler. I'm currently a student at Kalamazoo Valley Community college
     pursuing an Associates Degree in Software Development.
 </p>
-<p>Outside of school I work part time at Meijer, a local grocery store.</p>
-<p>My goal is to work in the industry as a programmer, with the larger goal of doing projects with machine learning.</p>
+<p>Outside of school I work part time at Meijer, a local grocery store. My hobbies include: Muay Thai/Kickboxing, video games, soccer, and archery.</p>
+<p>My goal is to work in the industry as a programmer, with the larger career goal of doing projects with machine learning.</p>
 <p>My coursework at KVCC has equipped me with the basic skills necessary to pursue these goals.</p>
 
-<p>{{ code }}</p>
+
+
+{% if code %}
+
+    
+
+<div class="card w-75">
+    <div class="card-header p-2">
+        <!-- <h6 class="text-primary">Auth Token:</h6> -->
+        <div class="row">
+            <div class="col">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-2">
+                    <h5 class="text-primary pt-1 ms-2">Auth Token:</h5>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <span onclick="copyContent()" class="btn btn-outline-secondary "><small>Copy to clipboard</small>
+                    <button onclick="copyContent()" type="button" class="btn btn-secondary" >
+                        <i class="bi bi-clipboard"></i>
+                      </button></span>
+                  </div>
+            </div>
+        </div>
+        
+        
+        <!-- <button onclick="myFunction()">Copy text</button> -->
+    </div>
+    <div class="card-body p-1">
+        <!-- <input type="text" value="gamer" id="myInput"> -->
+        
+        <p class="font-monospace text-info bg-secondary rounded  p-2" id="myText">{{code}}</p>
+        
+        
+    </div>
+</div>
+
+<script>
+    let text = document.getElementById('myText').innerHTML;
+    const copyContent = async () => {
+      try {
+        await navigator.clipboard.writeText(text);
+        console.log('Content copied to clipboard');
+      } catch (err) {
+        console.error('Failed to copy: ', err);
+      }
+    }
+    alert("Copied the text: " + copyText.value);
+  </script>
+
+{% endif %}
+    
+    
 {% endblock content%}

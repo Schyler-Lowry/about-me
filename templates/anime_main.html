@@ -7,7 +7,7 @@
 <div class="card">
     <div class="card-body">
         <p>
-            This is just a testing page where I have been experimenting with APIs. This page should display the <a href="https://myanimelist.net/topanime.php">top</a> 4 anime ranked on <a href="https://myanimelist.net/">MyAnimeList.net</a>.
+            This is just a testing page where I have been experimenting with APIs. This page should display the <a href="https://myanimelist.net/topanime.php" target="_blank">top</a> 4 anime ranked on <a href="https://myanimelist.net/" target="_blank">MyAnimeList.net</a>.
         </p>
     </div>
 </div>
@@ -29,7 +29,7 @@
                             <td>Title:</td>
                             <td><span class="fw-bold">{{ entry.node.title }}</span></td>
                         </tr>
-                        <a href="https://myanimelist.net/anime/{{ entry.node.id }}/"><img src="{{ entry.node.main_picture.medium }}" alt="anime image" class="img-fluid h-50" style="max-height: 321px;"></a>
+                        <a href="https://myanimelist.net/anime/{{ entry.node.id }}/" target="_blank"><img src="{{ entry.node.main_picture.medium }}" alt="anime image" class="img-fluid h-50" style="max-height: 321px;"></a>
                         <tr>
                             <td>Ranking</td>
                             <td><span class="fw-bold">{{ entry.ranking.rank }}</span></td>
