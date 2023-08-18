@@ -1,0 +1,1000 @@
+ 1006  winpty python manage.py makemigrations accounts
+ 1007  winpty python -m pip install django-crispy-forms==1.13.0
+ 1008  winpty python -m pip install crispy-bootstrap5
+ 1009  cd .
+ 1010  cd ..
+ 1011  cd cis218-inclass-4-Phoenicius/
+ 1012  pip freeze > requirements.txt
+ 1013  cd ..
+ 1014  cd cis218-assignment-4-Phoenicius/
+ 1015  pip freeze > requirements.txt
+ 1016  code .
+ 1017  cd ..
+ 1018  cd cis218-inclass-4-Phoenicius/
+ 1019  winpty python manage.py runserver
+ 1020  . .venv/Scripts/activate
+ 1021  winpty python manage.py runserver
+ 1022  cd 
+ 1023  cd cis218-assignment-4-Phoenicius/
+ 1024  . .venv/Scripts/activate
+ 1025  winpty python manage.py runserver
+ 1026  winpty python manage.py makemigrations accounts
+ 1027  winpty python manage.py migrate
+ 1028  winpty python manage.py runserver
+ 1029  winpty python manage.py createsuperuser
+ 1030  winpty python manage.py runserver
+ 1031  git add -A
+ 1032  git commit
+ 1033  git push
+ 1034  cd ~
+ 1035  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1036  . .venv/Scripts/activate
+ 1037  code .
+ 1038  winpty python manage.py runserver
+ 1039  winpty python manage.py collectstatic
+ 1040  winpty python manage.py runserver
+ 1041  git add -A
+ 1042  git commit
+ 1043  git push
+ 1044  cd ~
+ 1045  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1046  . .venv/Scripts/activate
+ 1047  code .
+ 1048  winpty python manage.py runserver
+ 1049  cd ~
+ 1050  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1051  . .venv/Scripts/activate
+ 1052  git status
+ 1053  git code .
+ 1054  code .
+ 1055  winpty python manage.py runserver
+ 1056  git add -A
+ 1057  git commit
+ 1058  git push
+ 1059  git branch -b additional_features
+ 1060  git checkout -b additional_features
+ 1061  cd ~
+ 1062  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1063  . .venv/Scripts/activate
+ 1064  code .
+ 1065  winpty python manage.py runserver
+ 1066  winpty python manage.py startapp posts
+ 1067  git status
+ 1068  winpty python manage.py startapp twits
+ 1069  winpty python manage.py makemigrations twits
+ 1070  winpty python manage.py migrate
+ 1071  winpty python manage.py makemigrations twits
+ 1072  winpty python manage.py migrate
+ 1073  winpty python manage.py makemigrations twits
+ 1074  winpty python manage.py migrate
+ 1075  winpty python manage.py makemigrations accounts
+ 1076  winpty python manage.py migrate
+ 1077  winpty python manage.py makemigrations twit
+ 1078  winpty python manage.py runserver
+ 1079  cd ~
+ 1080  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1081  . .venv/Scripts/activate
+ 1082  code .
+ 1083  winpty python manage.py runserver
+ 1084  git add -A
+ 1085  git commit
+ 1086  git checkout main
+ 1087  git merge additional_features 
+ 1088  git push
+ 1089  git checkout additional_features 
+ 1090  cd ~
+ 1091  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1092  git checkout main
+ 1093  git branch -d additional_features 
+ 1094  git checkout -b CRUD_Features
+ 1095  cd ~
+ 1096  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1097  . .venv/Scripts/activate
+ 1098  code .
+ 1099  winpty python manage.py runserver
+ 1100  winpty python manage.py makemigrations twits
+ 1101  winpty python manage.py runserver
+ 1102  winpty python manage.py makemigrations accounts
+ 1103  winpty python manage.py makemigrations twits
+ 1104  winpty python manage.py migrate
+ 1105  winpty python manage.py runserver
+ 1106  winpty python manage.py createsuperuser
+ 1107  winpty python manage.py runserver
+ 1108  git add -A
+ 1109  git commit
+ 1110  git checkout main 
+ 1111  git merge CRUD_Features 
+ 1112  git push
+ 1113  git checkout CRUD_Features 
+ 1114  winpty python manage.py runserver
+ 1115  git add -A
+ 1116  git commit
+ 1117  git checkout main
+ 1118  git merge CRUD_Features 
+ 1119  git push
+ 1120  git branch -d CRUD_Features 
+ 1121  git checkout -b additional_features
+ 1122  code .
+ 1123  cd ..
+ 1124  cd cis218-inclass-4-Phoenicius/
+ 1125  . .venv/Scripts/activate
+ 1126  code .
+ 1127  git status
+ 1128  git add -A
+ 1129  git commit
+ 1130  git push
+ 1131  git checkout -b in-class_review
+ 1132  winpty python manage.py runserver
+ 1133  git add -A
+ 1134  git commit
+ 1135  git checkout main 
+ 1136  git merge in-class_review 
+ 1137  git push
+ 1138  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1139  . .venv/Scripts/activate
+ 1140  code .
+ 1141  winpty python manage.py runserver
+ 1142  winpty python manage.py makemigrations twits
+ 1143  winpty python manage.py migrate
+ 1144  winpty python manage.py runserver
+ 1145  git add -A
+ 1146  git commit
+ 1147  git checkout main
+ 1148  git merge additional_features 
+ 1149  git push
+ 1150  git checkout additional_features 
+ 1151  winpty python manage.py runserver
+ 1152  git add -A
+ 1153  git commit
+ 1154  git checkout main
+ 1155  git merge
+ 1156  git merge additional_features 
+ 1157  git push
+ 1158  git branch -d additional_features 
+ 1159  git checkout -b styling_overhaul
+ 1160  winpty python manage.py runserver
+ 1161  git add -A
+ 1162  git commit
+ 1163  git checkout main
+ 1164  git merge styling_overhaul 
+ 1165  git push
+ 1166  git checkout styling_overhaul 
+ 1167  cd ~
+ 1168  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1169  . .venv/Scripts/activate
+ 1170  code .
+ 1171  winpty python manage.py runserver
+ 1172  git add -A
+ 1173  git commit
+ 1174  git checkout main 
+ 1175  git merge styling_overhaul 
+ 1176  git push
+ 1177  git checkout styling_overhaul 
+ 1178  cd ~
+ 1179  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1180  . .venv/Scripts/activate
+ 1181  code .
+ 1182  winpty python manage.py runserver
+ 1183  git restore -A
+ 1184  winpty python manage.py runserver
+ 1185  cd ..
+ 1186  cd cis218-inclass-4-Phoenicius/
+ 1187  . .venv/Scripts/activate
+ 1188  winpty python manage.py runserver
+ 1189  cd ..
+ 1190  cd cis218-assignment-4-Phoenicius/
+ 1191  . .venv/Scripts/activate
+ 1192  winpty python manage.py runserver
+ 1193  git add -A
+ 1194  git commit
+ 1195  git checkout main 
+ 1196  git merge styling_overhaul 
+ 1197  git push
+ 1198  git branch -d styling_overhaul 
+ 1199  git checkout -b user_profile_avatar
+ 1200  cd ~
+ 1201  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1202  . .venv/Scripts/activate
+ 1203  winpty python manage.py runserver
+ 1204  code .
+ 1205  winpty python manage.py runserver
+ 1206  winpty python -m pip install django-dump-die
+ 1207  winpty python manage.py runserver
+ 1208  winpty python manage.py makemigrations accounts
+ 1209  winpty python manage.py migrate
+ 1210  winpty python manage.py runserver
+ 1211  git add -A
+ 1212  git commit
+ 1213  code .
+ 1214  git add -A
+ 1215  git commit
+ 1216  git checkout main 
+ 1217  git merge user_profile_avatar 
+ 1218  git push
+ 1219  git branch -d user_profile_avatar 
+ 1220  git checkout -b java_script_additions
+ 1221  winpty python manage.py runserver
+ 1222  code .
+ 1223  winpty python manage.py runserver
+ 1224  git add -A
+ 1225  git commit
+ 1226  git checkout main
+ 1227  git merge java_script_additions 
+ 1228  git push
+ 1229  code .
+ 1230  git branch -d java_script_additions 
+ 1231  git checkout -b testing
+ 1232  cd ~
+ 1233  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1234  . .venv/Scripts/activate
+ 1235  code .
+ 1236  winpty python manage.py runserver
+ 1237  git checkout main 
+ 1238  git branch -d testing 
+ 1239  git status
+ 1240  git restore templates/home.html
+ 1241  git status
+ 1242  winpty python manage.py runserver
+ 1243  cd ~
+ 1244  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1245  . .venv/Scripts/activate
+ 1246  code .
+ 1247  winpty python manage.py test
+ 1248  winpty python manage.py runserver
+ 1249  winpty python manage.py test
+ 1250  winpty python manage.py runserver
+ 1251  winpty python manage.py test
+ 1252  winpty python manage.py runserver
+ 1253  winpty python manage.py test
+ 1254  cd ~
+ 1255  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1256  . .venv/Scripts/activate
+ 1257  code .
+ 1258  winpty python manage.py test
+ 1259  winpty python manage.py runserver
+ 1260  winpty python manage.py test
+ 1261  winpty python manage.py runserver
+ 1262  winpty python manage.py test
+ 1263  cd ~
+ 1264  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1265  . .venv/Scripts/activate
+ 1266  code .
+ 1267  winpty python manage.py test
+ 1268  winpty python manage.py runserver
+ 1269  winpty python manage.py test
+ 1270  git add -A
+ 1271  git commit
+ 1272  git checkout main
+ 1273  git merge testing 
+ 1274  git push
+ 1275  git checkout testing 
+ 1276  winpty python manage.py runserver
+ 1277  git checkout -b additional_features
+ 1278  winpty python manage.py runserver
+ 1279  cd ~
+ 1280  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1281  . .venv/Scripts/activate
+ 1282  code .
+ 1283  winpty python manage.py runserver
+ 1284  winpty python manage.py test
+ 1285  winpty python manage.py runserver
+ 1286  git add -A
+ 1287  git commit
+ 1288  git checkout main
+ 1289  git merge additional_features 
+ 1290  git push
+ 1291  git checkout testing 
+ 1292  winpty python manage.py runserver
+ 1293  code /
+ 1294  code .
+ 1295  winpty python manage.py runserver
+ 1296  git checkout main
+ 1297  git branch -d testing
+ 1298  git branch -d additional_features 
+ 1299  git checkout -b additional_features
+ 1300  winpty python manage.py runserver
+ 1301  cd ~
+ 1302  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1303  . .venv/Scripts/activate
+ 1304  code .
+ 1305  winpty python manage.py runserver
+ 1306  cd ~
+ 1307  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1308  . .venv/Scripts/activate
+ 1309  code .
+ 1310  winpty python manage.py runserver
+ 1311  git add -A
+ 1312  git commit
+ 1313  git checkout main
+ 1314  git merge additional_features 
+ 1315  git push
+ 1316  git checkout additional_features 
+ 1317  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1318  . .venv/Scripts/activate
+ 1319  code .
+ 1320  winpty python manage.py runserver
+ 1321  cd ~
+ 1322  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1323  . .venv/Scripts/activate
+ 1324  code .
+ 1325  winpty python manage.py runserver
+ 1326  cd ~
+ 1327  Cd kvcc/cis218-assignment-4-Phoenicius/
+ 1328  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1329  . .venv/Scripts/activate
+ 1330  code .
+ 1331  winpty python manage.py runserver
+ 1332  code .
+ 1333  winpty python manage.py runserver
+ 1334  cd ~
+ 1335  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1336  . .venv/Scripts/activate
+ 1337  code .
+ 1338  winpty python manage.py runserver
+ 1339  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1340  code .
+ 1341  winpty python manage.py runserver
+ 1342  cd ~
+ 1343  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1344  . .venv/Scripts/activate
+ 1345  code .
+ 1346  winpty python manage.py runserver
+ 1347  code .
+ 1348  winpty python manage.py runserver
+ 1349  cd ~
+ 1350  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1351  . .venv/Scripts/activate
+ 1352  code .
+ 1353  winpty python manage.py runserver
+ 1354  git add -A
+ 1355  git commit
+ 1356  git add -A
+ 1357  git commit
+ 1358  git checkout main
+ 1359  git merge additional_features 
+ 1360  git push
+ 1361  git checkout additional_features 
+ 1362  cd ~
+ 1363  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1364  . .venv/Scripts/activate
+ 1365  code .
+ 1366  winpty python manage.py runserver
+ 1367  cd ~
+ 1368  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1369  . .venv/Scripts/activate
+ 1370  code
+ 1371  code .
+ 1372  winpty python manage.py runserver
+ 1373  git add -A
+ 1374  git commit
+ 1375  git checkout main
+ 1376  git merge additional_features 
+ 1377  git push
+ 1378  git merge additional_features 
+ 1379  winpty python manage.py runserver
+ 1380  git branch -d additional_features 
+ 1381  git branch -b testing
+ 1382  git checkout -b testing
+ 1383  cd ~
+ 1384  cd kvcc/cis218-inclass-4-Phoenicius/
+ 1385  . .venv/Scripts/activate
+ 1386  code .
+ 1387  cd ..
+ 1388  cd cis218-assignment-4-Phoenicius/
+ 1389  . .venv/Scripts/activate
+ 1390  winpty python manage.py runserver
+ 1391  code .
+ 1392  winpty python manage.py runserver
+ 1393  cd ..
+ 1394  cd cis218-assignment-4-Phoenicius/
+ 1395  git add -A
+ 1396  git commit
+ 1397  git checkout main
+ 1398  git merge testing 
+ 1399  git push
+ 1400  git checkout testing 
+ 1401  cd ..
+ 1402  cd cis218-inclass-4-Phoenicius/
+ 1403  . .venv/Scripts/activate
+ 1404  code .
+ 1405  winpty python manage.py runserver
+ 1406  winpty python -m pip install 'environs[django]==9.3.5'
+ 1407  winpty python manage.py runserver
+ 1408  python -c "import secrets; print(secrets.token_urlsafe())"
+ 1409  winpty python -m pip install psycopg2==2.9.3
+ 1410  winpty python -m pip install whitenoise==5.3.0
+ 1411  winpty python manage.py collectstatic
+ 1412  winpty python manage.py runserver
+ 1413  winpty python -m pip install gunicorn==20.1.0
+ 1414  python -m pip freeze > requirements.txt
+ 1415  git add -A
+ 1416  git commit
+ 1417  git push
+ 1418  heroku create cis218-inclass-4
+ 1419  heroku addons:create heroku-postgresql:hobby-dev -a cis218-inclass-4
+ 1420  heroku create cis218-inclass-4-phoenicius
+ 1421  heroku addons:create heroku-postgresql:hobby-dev -a cis218-inclass-4-phoenicius
+ 1422  .
+ 1423  heroku addons
+ 1424  heroku addons:create heroku-postgresql:hobby-dev -a cis218-inclass-4-phoenicius
+ 1425  heroku addons:create heroku-postgresql:mini -a cis218-inclass-4-phoenicius
+ 1426  heroku config:set SECRET_KEY="0raXk88dPNnfBiRP-zmwrtTZreXgO7Yb80K2w-4QBFM"
+ 1427  git push heroku main
+ 1428  git add -A
+ 1429  git commit
+ 1430  git push heroku main
+ 1431  heroku ps:scale web=1
+ 1432  heroku run python manage.py migrate
+ 1433  heroku run python manage.py createsuperuser
+ 1434  heroku open
+ 1435  code .
+ 1436  cd ..
+ 1437  cd cis218-assignment-4-Phoenicius/
+ 1438  . .venv/Scripts/activate
+ 1439  code .
+ 1440  winpty python manage.py test
+ 1441  winpty python manage.py runserver
+ 1442  winpty python manage.py test
+ 1443  winpty python manage.py runserver
+ 1444  winpty python manage.py test
+ 1445  cd ~
+ 1446  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1447  . .venv/Scripts/activate
+ 1448  code .
+ 1449  winpty python manage.py test
+ 1450  winpty python manage.py runserver
+ 1451  winpty python manage.py test
+ 1452  winpty python manage.py runserver
+ 1453  winpty python manage.py test
+ 1454  winpty python manage.py runserver
+ 1455  winpty python manage.py test
+ 1456  git add -A
+ 1457  git commit
+ 1458  git checkout main 
+ 1459  git merge testing 
+ 1460  git push
+ 1461  git checkout testing
+ 1462  cd ~
+ 1463  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1464  . .venv/Scripts/activate
+ 1465  code .
+ 1466  winpty python manage.py test
+ 1467  winpty python manage.py runserver
+ 1468  winpty python manage.py test
+ 1469  winpty python manage.py runserver
+ 1470  winpty python manage.py test
+ 1471  winpty python manage.py runserver
+ 1472  winpty python manage.py test
+ 1473  winpty python manage.py runserver
+ 1474  winpty python manage.py test
+ 1475  git add -A
+ 1476  git commit
+ 1477  git checkout main 
+ 1478  git merge testing 
+ 1479  git push
+ 1480  git branch -d testing 
+ 1481  git checkout -b tidying_up_before_deployment
+ 1482  cd ~
+ 1483  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1484  . .venv/Scripts/activate
+ 1485  code .
+ 1486  winpty python manage.py runserver
+ 1487  winpty python manage.py test
+ 1488  winpty python manage.py runserver
+ 1489  winpty python manage.py test
+ 1490  winpty python manage.py runserver
+ 1491  winpty python manage.py test
+ 1492  winpty python manage.py runserver
+ 1493  winpty python manage.py test
+ 1494  winpty python manage.py runserver
+ 1495  git checkout main
+ 1496  git merge tidying_up_before_deployment 
+ 1497  git status
+ 1498  history > history6.txt
+ 1499  winpty python -m pip install 'environs[django]==9.3.5'
+ 1500  python -c "import secrets; print(secrets.token_urlsafe())"
+ 1501  winpty python -m pip install psycopg2==2.9.3
+ 1502  winpty python -m pip install whitenoise==5.3.0
+ 1503  winpty python manage.py collectstatic
+ 1504  winpty python -m pip install gunicorn==20.1.0
+ 1505  python -m pip freeze > requirements.txt
+ 1506  git add -A
+ 1507  git commit
+ 1508  git push
+ 1509  heroku create tweeter
+ 1510  heroku create cis218-tweeter
+ 1511  heroku addons:create heroku-postgresql:mini -a cis218-tweeter
+ 1512  heroku config:set SECRET_KEY="SFqL2nq6vicsdfPgyhqp1sGdbDitYCRe6aKK-2whUMM"
+ 1513  git push heroku main
+ 1514  heroku ps:scale web=1
+ 1515  heroku run python manage.py migrate
+ 1516  heroku run python manage.py createsuperuser
+ 1517  heroku open
+ 1518  winpty python manage.py runserver
+ 1519  git push heroku main
+ 1520  git add -A
+ 1521  git commit
+ 1522  git push
+ 1523  git push heroku main
+ 1524  git status
+ 1525  git pull
+ 1526  winpty python manage.py runserver
+ 1527  git add -A
+ 1528  git commit
+ 1529  git push
+ 1530  git push heroku main
+ 1531  winpty python manage.py runserver
+ 1532  git add -A
+ 1533  git commit
+ 1534  git push
+ 1535  git push heroku main
+ 1536  winpty python manage.py runserver
+ 1537  git add -A
+ 1538  git status
+ 1539  git push
+ 1540  git commit
+ 1541  git push heroku main
+ 1542  git push
+ 1543  git add -A
+ 1544  git commit
+ 1545  git push
+ 1546  git push heroku main
+ 1547  winpty python manage.py runserver
+ 1548  git add -A
+ 1549  git commit
+ 1550  git push heroku main
+ 1551  git add -A
+ 1552  git commit
+ 1553  git push
+ 1554  git push heroku main
+ 1555  cd ~
+ 1556  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1557  . .venv/Scripts/activate
+ 1558  code .
+ 1559  cd ~
+ 1560  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1561  . .venv/Scripts/activate
+ 1562  git branch -d tidying_up_before_deployment 
+ 1563  git checkout -b additional_features
+ 1564  code .
+ 1565  winpty python manage.py runserver
+ 1566  git add -a
+ 1567  git add -A
+ 1568  git commit
+ 1569  git checkout main 
+ 1570  git merge additional_features 
+ 1571  git push
+ 1572  git pull
+ 1573  git push
+ 1574  git push heroku main
+ 1575  git add -A
+ 1576  git commit
+ 1577  git push
+ 1578  git push heroku main
+ 1579  cd ~
+ 1580  cd kvcc/cis218-assignment-4-Phoenicius/
+ 1581  . .venv/Scripts/activate
+ 1582  code .
+ 1583  winpty python manage.py activate
+ 1584  winpty python manage.py runserver
+ 1585  git add -A
+ 1586  git commit
+ 1587  git push
+ 1588  winpty python manage.py runserver
+ 1589  git checkout additional_features 
+ 1590  winpty python manage.py runserver
+ 1591  winpty python manage.py makemigrations twits
+ 1592  winpty python manage.py migrate
+ 1593  winpty python manage.py runserver
+ 1594  git checkout main
+ 1595  git
+ 1596  git restore
+ 1597  git restore twits/
+ 1598  git checkout main
+ 1599  git status
+ 1600  git restore templates/home.html 
+ 1601  git branch -d additional_features 
+ 1602  git checkout -b additional_features_2
+ 1603  git checkout main 
+ 1604  git branch -d additional_features_2 
+ 1605  . .venv/Scripts/deactivate.bat
+ 1606  . .venv/Scripts/activate
+ 1607  cd ..
+ 1608  cd ~
+ 1609  cd kvcc/
+ 1610  git clone https://github.com/cis218/cis218-inclass-5-Phoenicius.git
+ 1611  cd cis218-inclass-5-Phoenicius/
+ 1612  python -m venv .venv
+ 1613  ls -l
+ 1614  ls -
+ 1615  ls
+ 1616  ls -la
+ 1617  . .venv/Scripts/activate
+ 1618  winpty python -m pip install -r requirements.txt
+ 1619  winpty python manage.py migrate
+ 1620  winpty python manage.py createsuperuser
+ 1621  winpty pip -m install django-adminlte2-pdq
+ 1622  winpty python -m pip install django-adminlte2-pdq
+ 1623  python -m pip freeze >requirements.txt
+ 1624  git status
+ 1625  code .
+ 1626  winpty python manage.py runserver
+ 1627  winpty python manage.py startapp tickets
+ 1628  winpty python manage.py makemigrations tickets
+ 1629  winpty python manage.py migrate
+ 1630  winpty python manage.py runserver
+ 1631  git add -A
+ 1632  git commit
+ 1633  git push
+ 1634  winpty python manage.py runserver
+ 1635  git add -A
+ 1636  git commit
+ 1637  git push
+ 1638  cd ~
+ 1639  cd kvcc/
+ 1640  git clone https://github.com/cis218/cis218-assignment-5-Phoenicius.git
+ 1641  cd cis218-assignment-5-Phoenicius/
+ 1642  python -m venv .venv
+ 1643  history > history.txt
+ 1644  winpty python -m pip install -r requirements.txt
+ 1645  . .venv/Scripts/activate
+ 1646  winpty python -m pip install -r requirements.txt
+ 1647  django-admin startproject django_project .
+ 1648  winpty python manage.py startapp accounts
+ 1649  code .
+ 1650  winpty python manage.py makemigrations accounts
+ 1651  winpty python -m pip install pillow
+ 1652  winpty python manage.py makemigrations accounts
+ 1653  winpty python manage.py migrate
+ 1654  winpty python manage.py runserver
+ 1655  winpty python manage.py createsuperuser
+ 1656  winpty python manage.py makemigrations customusers
+ 1657  winpty python manage.py migrate
+ 1658  winpty python manage.py makemigrations customusers
+ 1659  winpty python manage.py migrate
+ 1660  winpty python manage.py makemigrations customusers
+ 1661  winpty python manage.py migrate
+ 1662  winpty python manage.py createsuperuser
+ 1663  winpty python manage.py runserver
+ 1664  winpty python manage.py collectstatic
+ 1665  winpty python manage.py runserver
+ 1666  git add -A
+ 1667  git commit
+ 1668  git push
+ 1669  cd ~
+ 1670  cd kvcc/cis218-assignment-5-Phoenicius/
+ 1671  . .venv/Scripts/activate
+ 1672  git checkout -b development_branch
+ 1673  code .
+ 1674  winpty python manage.py runserver
+ 1675  git status
+ 1676  git restore templates/userprofile.html 
+ 1677  git restore templates/adminlte2/partials/_styles.html
+ 1678  git status
+ 1679  cd ~
+ 1680  cd kvcc/cis218-assignment-5-Phoenicius/
+ 1681  . .venv/Scripts/activate
+ 1682  code .
+ 1683  winpty python manage.py runserver
+ 1684  cd ~
+ 1685  cd kvcc/cis218-assignment-5-Phoenicius/
+ 1686  cd ~
+ 1687  cd kvcc/cis218-assignment-5-Phoenicius/
+ 1688  . .venv/Scripts/activate
+ 1689  code .
+ 1690  winpty python manage.py runserver
+ 1691  winpty python manage.py startapp fitness
+ 1692  winpty python manage.py runserver
+ 1693  winpty python manage.py makemigrations fitness
+ 1694  winpty python manage.py migrate
+ 1695  winpty python manage.py makemigrations fitness
+ 1696  winpty python manage.py runserver
+ 1697  winpty python manage.py makemigrations fitness
+ 1698  winpty python manage.py migrate
+ 1699  winpty python manage.py runserver
+ 1700  winpty python manage.py makemigrations fitness
+ 1701  winpty python manage.py migrate
+ 1702  winpty python manage.py runserver
+ 1703  git add -A
+ 1704  git commit
+ 1705  git add -A
+ 1706  git commit
+ 1707  git checkout main 
+ 1708  git merge development_branch 
+ 1709  git push
+ 1710  git checkout development_branch 
+ 1711  git add -A
+ 1712  git commit
+ 1713  git checkout main 
+ 1714  git merge development_branch 
+ 1715  git push
+ 1716  git checkout development_branch 
+ 1717  cd ~
+ 1718  cd kvcc/cis218-assignment-5-Phoenicius/
+ 1719  . .venv/Scripts/activate
+ 1720  code .
+ 1721  winpty python manage.py runserver
+ 1722  winpty python manage.py makemigrations fitness
+ 1723  winpty python manage.py migrate
+ 1724  winpty python manage.py runserver
+ 1725  winpty python manage.py makemigrations fitness
+ 1726  winpty python manage.py migrate
+ 1727  winpty python manage.py makemigrations fitness
+ 1728  winpty python manage.py migrate
+ 1729  winpty python manage.py runserver
+ 1730  winpty python manage.py makemigrations fitness
+ 1731  winpty python manage.py runserver
+ 1732  winpty python manage.py migrate
+ 1733  winpty python manage.py runserver
+ 1734  git add -A
+ 1735  git commit
+ 1736  git checkout main 
+ 1737  git merge development_branch 
+ 1738  git push
+ 1739  git checkout development_branch 
+ 1740  cd ..
+ 1741  cd cis218-inclass-4-Phoenicius/
+ 1742  . .venv/Scripts/activate
+ 1743  git push
+ 1744  code .
+ 1745  winpty python manage.py runserver
+ 1746  git status
+ 1747  git restore db.sqlite3 
+ 1748  cd ..
+ 1749  cd cis218-assignment-5-Phoenicius/
+ 1750  . .venv/Scripts/activate
+ 1751  winpty python manage.py runserver
+ 1752  cd ~
+ 1753  cd kvcc/
+ 1754  cd cis218-assignment-5-Phoenicius/
+ 1755  . .venv/Scripts/activate
+ 1756  code .
+ 1757  winpty python manage.py runserver
+ 1758  winpty python manage.py makemigrations fitness
+ 1759  winpty python manage.py migrate
+ 1760  winpty python manage.py runserver
+ 1761  winpty python manage.py makemigrations fitness
+ 1762  winpty python manage.py migrate
+ 1763  winpty python manage.py runserver
+ 1764  winpty python manage.py makemigrations fitness
+ 1765  winpty python manage.py migrate
+ 1766  winpty python manage.py runserver
+ 1767  winpty python manage.py makemigrations customusers
+ 1768  winpty python manage.py runserver
+ 1769  git status
+ 1770  git add -A
+ 1771  git commit
+ 1772  git checkout main 
+ 1773  git merge development_branch 
+ 1774  git push
+ 1775  git checkout development_branch 
+ 1776  code .
+ 1777  winpty python manage.py runserver
+ 1778  cd ~
+ 1779  cd kvcc/cis218-assignment-5-Phoenicius/
+ 1780  . .venv/Scripts/activate
+ 1781  code .
+ 1782  winpty python manage.py runserver
+ 1783  git add -A
+ 1784  git commit
+ 1785  git checkout main
+ 1786  git merge development_branch 
+ 1787  git push
+ 1788  git checkout development_branch 
+ 1789  code .
+ 1790  winpty python manage.py runserver
+ 1791  git add -A
+ 1792  git commit
+ 1793  git checkout main
+ 1794  git merge development_branch 
+ 1795  git push
+ 1796  git checkout development_branch 
+ 1797  cd ~
+ 1798  cd kvcc/cis218-assignment-5-Phoenicius/
+ 1799  . .venv/Scripts/activate
+ 1800  code .
+ 1801  winpty python manage.py runserver
+ 1802  git restore dashboard.html
+ 1803  git restore templates/dashboard.html 
+ 1804  git status
+ 1805  winpty python manage.py runserver
+ 1806  git add -A
+ 1807  git commit
+ 1808  git checkout main
+ 1809  git merge development_branch 
+ 1810  git push
+ 1811  git checkout development_branch 
+ 1812  code .
+ 1813  winpty python manage.py test
+ 1814  winpty python manage.py runserver
+ 1815  winpty python manage.py test
+ 1816  winpty python manage.py runserver
+ 1817  winpty python manage.py test
+ 1818  winpty python manage.py runserver
+ 1819  winpty python manage.py test
+ 1820  winpty python manage.py runserver
+ 1821  winpty python manage.py test
+ 1822  winpty python manage.py runserver
+ 1823  winpty python manage.py test
+ 1824  winpty python manage.py runserver
+ 1825  winpty python manage.py test
+ 1826  winpty python pip -m install mock==5.1.0
+ 1827  winpty python -m pip install mock==5.1.0
+ 1828  pip freeze > requirements.txt
+ 1829  winpty python manage.py test
+ 1830  winpty python manage.py runserver
+ 1831  winpty python manage.py test
+ 1832  winpty python manage.py runserver
+ 1833  winpty python manage.py test
+ 1834  cd ~
+ 1835  cd kvcc/
+ 1836  cd cis218-assignment-5-Phoenicius/
+ 1837  . .venv/Scripts/activate
+ 1838  code .
+ 1839  winpty python manage.py runserver
+ 1840  winpty python manage.py test
+ 1841  winpty python manage.py runserver
+ 1842  winpty python manage.py test
+ 1843  winpty python manage.py runserver
+ 1844  winpty python manage.py test
+ 1845  winpty python -d pip uninstall mock
+ 1846  winpty python -m pip uninstall mock
+ 1847  pip freeze > requirements.txt 
+ 1848  winpty python manage.py test
+ 1849  winpty python manage.py runserver
+ 1850  python -c "import secrets; print(secrets.token_urlsafe())"
+ 1851  git add -A
+ 1852  git commit
+ 1853  code .
+ 1854  git add -A
+ 1855  git commit
+ 1856  git checkout main
+ 1857  git merge development_branch 
+ 1858  git push
+ 1859  git branch -d development_branch 
+ 1860  heroku create cis218-inclass-5-phoenicius
+ 1861  heroku create cis218-assignment-5-phoenicius
+ 1862  heroku addons:create heroku-postgresql:mini -a cis218-assignment-5-phoenicius
+ 1863  heroku config:set SECRET_KEY="FEFq8IgFjX88DcobKQgfCIRAOx4SPdUktgRXwCV3Xyo"
+ 1864  git push heroku main
+ 1865  cd ~
+ 1866  cd kvcc/
+ 1867  cd cis218-assignment-5-Phoenicius/
+ 1868  . .venv/Scripts/activate
+ 1869  heroku create cis218-assignment-5-phoenicius
+ 1870  heroku config:set SECRET_KEY="FEFq8IgFjX88DcobKQgfCIRAOx4SPdUktgRXwCV3Xyo"
+ 1871  heroku info
+ 1872  heroku --version
+ 1873  heroku keys
+ 1874  git remote -v
+ 1875  heroku git:remote -a cis218-assignment-5-phoenicius
+ 1876  git remote -v
+ 1877  heroku config:set SECRET_KEY="FEFq8IgFjX88DcobKQgfCIRAOx4SPdUktgRXwCV3Xyo"
+ 1878  git push heroku main
+ 1879  heroku ps:scale web=1
+ 1880  heroku run python manage.py migrate
+ 1881  heroku run python manage.py createsuperuser
+ 1882  winpty python manage.py runserver
+ 1883  code .
+ 1884  git add -A
+ 1885  git commit
+ 1886  git push
+ 1887  git push heroku main
+ 1888  cd !
+ 1889  cd ~
+ 1890  cd kvcc/
+ 1891  cd cis218-assignment-4-Phoenicius/
+ 1892  git remote -v
+ 1893  git remove -v
+ 1894  git remote remove origin
+ 1895  git remote -v
+ 1896  git remote add origin https://github.com/Schyler-Lowry/twitter-clone.git
+ 1897  git push -u origin master
+ 1898  git remote -v
+ 1899  git status
+ 1900  git push -u origin main
+ 1901  git pull
+ 1902  git status
+ 1903  git push -u origin main
+ 1904  git pull main
+ 1905  git pull
+ 1906  git push
+ 1907  git push --set-upstream origin main
+ 1908  git pull origin main
+ 1909  git status
+ 1910  git push --help
+ 1911  git pull --allow-unrelated-histories origin main
+ 1912  git status
+ 1913  git push
+ 1914  git add -A
+ 1915  git commit
+ 1916  git push
+ 1917  git push --set-upstream origin main
+ 1918  git status
+ 1919  git pull
+ 1920  git status
+ 1921  git add -A
+ 1922  git push
+ 1923  git add -A
+ 1924  git commit
+ 1925  git push
+ 1926  git add -A
+ 1927  git commit
+ 1928  git push
+ 1929  ls
+ 1930  ls -la
+ 1931  cd ~
+ 1932  ls -la
+ 1933  ls
+ 1934  cd ..
+ 1935  ls
+ 1936  ls -la
+ 1937  cd ..
+ 1938  ls -la
+ 1939  ls -l
+ 1940  ls -ls
+ 1941  ls
+ 1942  ls --help
+ 1943  ls -L
+ 1944  ls -a
+ 1945  ls -la
+ 1946  cd .
+ 1947  ls
+ 1948  cd ~
+ 1949  cd p
+ 1950  ls -la
+ 1951  md progamming
+ 1952  mkdir programming
+ 1953  ls -la
+ 1954  cd MyProjects/
+ 1955  cd..
+ 1956  cd .
+ 1957  cd ..
+ 1958  ls
+ 1959  cd myProjects/
+ 1960  ls
+ 1961  mkdir learning
+ 1962  cd learning/
+ 1963  python -m venv .venv
+ 1964  . .venv/Scripts/activate
+ 1965  winpty python -m pip install requests
+ 1966  code .
+ 1967  ks
+ 1968  ls
+ 1969  winpty python main.py
+ 1970  docker run -p 80:80 kennethreitz/httpbin
+ 1971  winpty python main.py
+ 1972  winpty python main.py main response
+ 1973  winpty python main.py main()
+ 1974  winpty python main.py main(response)
+ 1975  winpty python main.py learn_to_code()
+ 1976  winpty python main.py learn_to_code
+ 1977  winpty python main.py
+ 1978  winpty python main.py response
+ 1979  winpty python main.py 1
+ 1980  winpty python main.py 0
+ 1981  winpty python main.py 1
+ 1982  winpty python main.py 2
+ 1983  winpty python main.py 0
+ 1984  winpty python main.py 2
+ 1985  winpty python main.py 1
+ 1986  winpty python main.py 0
+ 1987  winpty python main.py 3
+ 1988  winpty python main.py 4
+ 1989  winpty python main.py 0
+ 1990  winpty python main.py 1
+ 1991  cd ~
+ 1992  cd kvcc/
+ 1993  cd cis218-assignment-1-Phoenicius/
+ 1994  . .venv/Scripts/activate
+ 1995  winpty python manage.py runserver
+ 1996  cd ~
+ 1997  ls
+ 1998  cd ~
+ 1999  cd schyler_coding_projects/
+ 2000  cd SchylerAboutMeWebsite/
+ 2001  . .venv/Scripts/activate
+ 2002  winpty python manage.py runserver
+ 2003  code .
+ 2004  git remote -v
+ 2005  history > history8.text
