@@ -3,10 +3,45 @@
 {% block content %}
 <hr>
 <br>
+<h4>About this page:</h4>
 <div class="card">
     <div class="card-body">
-        <p>Info about anime will go here:</p>
-        <p>{{something}}</p>
+        <p>
+            This is just a testing page where I have been experimenting with APIs. This page should display the <a href="https://myanimelist.net/topanime.php">top</a> 4 anime ranked on <a href="https://myanimelist.net/">MyAnimeList.net</a>.
+        </p>
     </div>
 </div>
+<hr>
+
+
+<div class="row">
+    {% for entry in anime.data %}
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>ID:</td>
+                            <td><span class="fw-bold">{{ entry.node.id }}</span></td>
+                        </tr>
+                        <tr>
+                            <td>Title:</td>
+                            <td><span class="fw-bold">{{ entry.node.title }}</span></td>
+                        </tr>
+                        <a href="https://myanimelist.net/anime/{{ entry.node.id }}/"><img src="{{ entry.node.main_picture.medium }}" alt="anime image" class="img-fluid h-50" style="max-height: 321px;"></a>
+                        <tr>
+                            <td>Ranking</td>
+                            <td><span class="fw-bold">{{ entry.ranking.rank }}</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
 {% endblock content %}
