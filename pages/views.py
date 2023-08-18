@@ -2,7 +2,8 @@
 # CIS-218
 # 5/25/2023
 
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, View
+from django.shortcuts import render
 
 import ast
 
@@ -36,16 +37,35 @@ class AnimeMainPageView(TemplateView):
     }
 
     #anime = requests.get("https://api.myanimelist.net/v2/anime/30230?fields=id,title,main_picture,alternative_titles,start_date,end_date,synopsis,mean,rank,popularity", headers=header)
-    anime = requests.get("https://api.myanimelist.net/v2/anime/ranking?ranking_type=all&limit=4", headers=header)
-    anime_dict = anime.json()
+
+    # Next TODO:
+    # Pass a query param into the .format so you can display how many top animes you want to see
+    
     #anime_dict = ast.literal_eval(anime.text)
     
-    print("My type is:", type(anime_dict))
+    #print("My type is:", type(anime_dict))
+    def get(self, request, *args, **kwargs):
+        context = self.get_context_data(**kwargs)
+        return self.render_to_response(context)
     
+    def post(self, request, *args, **kwargs):
+        context = self.get_context_data(**kwargs)
+        return self.render_to_response(context)
     
-    def get_context_data(self, **kwargs):
+    def get_context_data(self, header=header, **kwargs):
         context = super(AnimeMainPageView, self).get_context_data(**kwargs)
-        context["anime"] = self.anime_dict
+        getnumber = self.request.POST.get("topanime")
+        print("THE NUMBER", getnumber)
+        if not getnumber:
+            number = 4
+        else:
+            number = getnumber
+        anime = requests.get("https://api.myanimelist.net/v2/anime/ranking?ranking_type=all&limit={}".format(number), headers=header)
+        anime_dict = anime.json()
+        
+        print("My type is:", type(anime_dict))
+        context["anime"] = anime_dict
+        context["number"] = number
         return context
     
 
