@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Assignment 1 - Static Web Site In Django
 
 ## Author
@@ -107,3 +108,6 @@ This means having lines similar to the following in your base template.
 ## Known Problems, Issues, And/Or Errors in the Program
 
 
+=======
+# about-me
+>>>>>>> 004144b7caac4709ef90a36a93b3d9777ef545c1
