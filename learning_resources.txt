@@ -13,3 +13,4 @@ https://www.youtube.com/watch?v=Xi1F2ZMAZ7Q
 https://www.geeksforgeeks.org/http-headers/#
 https://myanimelist.net/forum/?topicid=1973141
 https://gitlab.com/-/snippets/2039434
+https://docs.djangoproject.com/en/4.2/ref/request-response/#quick-overview -- I learned about the path attribute, and various other possibilities
