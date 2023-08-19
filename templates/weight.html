@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<hr>
+<br>
+<h4>About this page:</h4>
+<div class="card sticky-top">
+    <div class="card-body">
+        <p>
+            This is just a testing page where I have been experimenting with APIs. 
+            This page retrieves weight entry data from a fitness tracking app I made, which is also a WIP.
+            Eventually, I'll have a form that can make queries to the fitness tracking app's database.
+        </p>
+        
+    </div>
+</div>
+<hr>
+<div class="card">
+    <div class="card-body">
+        {{api_response}}
+    </div>
+
+</div>
+<hr>
+
+<div class="card">
+    <div class="card-body">
+        {% for entry in api_response %}
+            <p>{{entry.id}}</p>
+            <p>{{entry.user_id}}</p>
+            <p>{{entry.created_at}}</p>
+            <p>{{entry.updated_at}}</p>
+            <p>{{entry.weight}}</p>
+            <p>{{entry.note}}</p>
+            <hr>
+            
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock content %}

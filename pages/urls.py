@@ -4,9 +4,10 @@
 
 from django.urls import path
 
-from .views import HomePageView, ProjectsPageView, ContactPageView, AnimeMainPageView
+from .views import HomePageView, ProjectsPageView, ContactPageView, AnimeMainPageView, WeightPageView
 
 urlpatterns = [
+    path("projects/api/weight/", WeightPageView.as_view(), name="weight"),
     path("projects/api/anime/", AnimeMainPageView.as_view(), name="anime"),
     path("projects/myprojects/", ProjectsPageView.as_view(), name="projects"),
     path("contact/", ContactPageView.as_view(), name="contact"),

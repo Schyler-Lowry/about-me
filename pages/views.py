@@ -67,5 +67,14 @@ class AnimeMainPageView(TemplateView):
         context["anime"] = anime_dict
         context["number"] = number
         return context
-    
 
+class WeightPageView(TemplateView):
+    template_name = "weight.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(WeightPageView, self).get_context_data(**kwargs)
+        response = requests.get("https://cis218-assignment-5-phoenicius-528582113022.herokuapp.com/api/entries/")
+        api_response = response.json()
+        print("API RESPONSE TYPE:", type(api_response))
+        context["api_response"] = api_response
+        return context

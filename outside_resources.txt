@@ -1,0 +1,15 @@
+https://stackoverflow.com/questions/150505/capturing-url-parameters-in-request-get
+https://stackoverflow.com/questions/29153593/passing-variable-from-django-template-to-view
+https://stackoverflow.com/questions/27609140/how-get-the-text-inside-a-paragraph-with-javascript
+https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+https://stackoverflow.com/questions/34423085/get-data-after-in-url-django-template?noredirect=1&lq=1
+https://stackoverflow.com/questions/2969649/how-to-loop-x-times-in-django?rq=4
+https://stackoverflow.com/questions/66082944/is-there-a-way-to-access-nested-python-dictionaries-in-django-template-without-t
+https://stackoverflow.com/questions/21623013/django-template-in-nested-dictionary
+https://www.w3schools.com/python/python_dictionaries_nested.asp
+https://stackoverflow.com/questions/66869413/visual-studio-code-does-not-detect-virtual-environments
+https://stackoverflow.com/questions/11248073/how-do-i-remove-all-packages-installed-by-pip
+https://www.youtube.com/watch?v=Xi1F2ZMAZ7Q
+https://www.geeksforgeeks.org/http-headers/#
+https://myanimelist.net/forum/?topicid=1973141
+https://gitlab.com/-/snippets/2039434
