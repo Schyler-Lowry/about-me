@@ -37,9 +37,6 @@ class AnimeMainPageView(TemplateView):
     }
 
     #anime = requests.get("https://api.myanimelist.net/v2/anime/30230?fields=id,title,main_picture,alternative_titles,start_date,end_date,synopsis,mean,rank,popularity", headers=header)
-
-    # Next TODO:
-    # Pass a query param into the .format so you can display how many top animes you want to see
     
     #anime_dict = ast.literal_eval(anime.text)
     

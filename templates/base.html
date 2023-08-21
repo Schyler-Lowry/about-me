@@ -124,11 +124,13 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item {% if request.get_full_path == projects %}bg-info bg-opacity-25 border border-outline rounded{% endif %}" href="{{ projects }}">Previous Projects</a></li>
-              <li><h6 class="dropdown-header">Current WIP Projects</h6></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">Current WIP Projects:</h6></li>
               
               
-              <li><a class="dropdown-item {% if request.get_full_path == anime_api %}bg-info bg-opacity-25 border border-outline rounded{% endif %}" href="{{ anime_api }}">Anime API</a></li>
-              <li><a class="dropdown-item {% if request.get_full_path == weight_api %}bg-info bg-opacity-25 border border-outline rounded{% endif %}" href="{{ weight_api }}">Weight API</a></li>
+              <li><a class="dropdown-item disabled {% if request.get_full_path == anime_api %}bg-info bg-opacity-25 border border-outline rounded{% endif %}" aria-disabled="true" href="{{ anime_api }}">MAL API</a></li>
+              <li><a href="" class="dropdown-item disabled">Fitness Tracking Log</a></li>
+              {# <li><a class="dropdown-item {% if request.get_full_path == weight_api %}bg-info bg-opacity-25 border border-outline rounded{% endif %}" href="{{ weight_api }}">Weight API</a></li> #}
             </ul>
           </li>
         </ul>
@@ -150,7 +152,7 @@
 
 <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <small><span class="text-muted"><small>These web pages are designed with Bootstrap v5.2. The website application runs on Django v4.0.10.</small></span></small>
+      <small><span class="text-muted"><small>These web pages are designed with Bootstrap v5.2.</small></span></small>
     </div>
   </footer>
 

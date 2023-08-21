@@ -7,47 +7,28 @@
 <h1 class="mt-5">My Projects</h1>
 
 <hr>
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <span class="fst-italic" style="white-space: pre-line"><span class="fw-bold">Note 8-18-2023: </span>
-    These are old, and no longer publically available. I need to update this page. These were all small programs I wrote for school assignments.</span>
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
 
-    <div class="container py-4">
   
-     <div class="card mb-4">
+     
+  
+     <div class="card my-2">
+      
+      <div class="card-body">
+        <h5 class="card-title">Twitter Clone</h5>
+        <p class="card-text">This was a project for my web development class at KVCC. We had to design a twitter clone (called "Tweeter"). The application is built with the Django library in Python. It features full CRUD operations, elegant styling (at least I'd like to say it does), and connects with a PostgreSQL database.</p>
+        
+        <p class="card-text">Visit the Github page to see images. Or click the demo link to try it yourself.</p>
+        <a href="https://github.com/Schyler-Lowry/twitter-clone" class="btn btn-secondary" type="button" target="_blank"><i class="bi bi-github"> </i>Project Page</a>
+        <a href="https://cis218-tweeter-c49931f491dc.herokuapp.com/" class="btn btn-primary" type="button" target="_blank"><i class="bi bi-arrow-up-right-square"> </i>Live Demo</a>
+      </div>
+    </div>
+    
+    <div class="card my-2">
       <div class="card-body">
         <p class="card-text">
           Visit my <a class="border rounded border-outline" href="https://github.com/Schyler-Lowry" target="_blank"><i class="bi bi-github"></i> Github</a> page to view most recent projects.
         </p>
       </div>
      </div>
-  
-      <div class="row align-items-md-stretch">
-      
-        
-        <div class="p-5 mb-4 bg-light rounded-3">
-          <div class="h-100 p-5 bg-light border rounded-3">
-            <h2>Search and Sort program</h2>
-            <p>Assignment for my Advanced Python class. Program performs various search and sort functions with lists, and linked lists.</p>
-            <a href="https://github.com/Phoenicius/SearchAndSort" class="btn btn-outline-secondary" type="button" target="_blank">Github</a>
-          </div>
-        </div>
-      
-      <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>SQLite Database with GUI</h2>
-          <p>An SQL lite database written in Python. Uses PySimpleGUI to operate. Performs simple CRUD operations.</p>
-          <a href="https://github.com/Phoenicius/SQLite-DB-with-GUI" class="btn btn-outline-secondary" type="button" target="_blank">Github</a>
-        </div>
-      </div>
-      <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>Text to Discord Emoji Converter</h2>
-          <p>Silly little program that converts a string to the corresponding ":regional_indicator_:" emoji string used in Discord.</p>
-          <a href="https://github.com/Phoenicius/text-to-Discord-emojis" class="btn btn-outline-secondary" type="button" target="_blank">Github</a>
-        </div>
-      </div>
-    </div>
-
+   
 {% endblock content%}
